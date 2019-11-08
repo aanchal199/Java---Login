@@ -1,0 +1,28 @@
+import javax.swing.*;
+class Swing
+{
+public static void main(String args[])
+{
+JFrame F = new JFrame("Swing Example");
+JLabel L1 = new JLabel("Username");
+JLabel L2= new JLabel("Password");
+JTextField T = new JTextField();
+JPasswordField P = new JPasswordField();
+P.setEchoChar('*');
+JButton B = new JButton("SUBMIT");
+F.setLayout(null);
+L1.setBounds(20,20,80,50);
+L2.setBounds(20,80,80,50);
+T.setBounds(80,20,80,40);
+P.setBounds(80,80,80,40);
+B.setBounds(35,160,80,50);
+F.add(L1);
+F.add(L2);
+F.add(T);
+F.add(P);
+F.add(B);
+F.setSize(300,300);
+F.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+F.setVisible(true);
+}
+}
